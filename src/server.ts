@@ -21,8 +21,6 @@ app.use(routes);
 
 // Conectar ao banco de dados MongoDB
 mongoose.connect('mongodb://localhost:27017/', {
-    // useNewUrlParser: true, // Remova esta linha
-    // useUnifiedTopology: true,
 }).then(() => {
     console.log('Conexão com o MongoDB estabelecida com sucesso');
 }).catch((error) => {
